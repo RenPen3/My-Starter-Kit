@@ -17,7 +17,7 @@
   background: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
   /* background: #23424a; */
-  padding: 1em;
+  padding: 2em;
   border-radius: 4px;
 }
 .nav-btn {
@@ -112,7 +112,7 @@
 
 /* ===================================== */
 @media screen and (max-width: 768px) {
-  .nav .nav__content .nav__btn {
+  .nav-btn {
     display: none;
   }
 
@@ -121,35 +121,35 @@
     border: none;
   }
 
-  .nav .nav__content {
+  .nav-content {
     border-radius: 0px;
     padding: 1.5em 1em;
   }
 
-  .nav .nav__content .nav__logo {
+  .nav-logo {
     font-size: 1.2rem;
   }
 
-  .nav .nav__content .mobile__ham {
+  .mobile-ham {
     width: 40%;
     max-width: 30px;
   }
 
-  .nav .nav__content .mobile__ham .mobile__lines {
+  .mobile-lines {
     height: 2px;
     margin-bottom: 0.3em;
     background: #fafafa;
     border-radius: 4px;
   }
-  .nav .nav__content .mobile__ham .mobile__lines:last-child {
+  .mobile-lines:last-child {
     margin-bottom: 0em;
   }
 
-  .nav .nav__content .mobile__ham .mobile__line2 {
+  .line2 {
     width: 50%;
   }
 
-  .nav .nav__content .nav__menu {
+  .nav-menu {
     display: none;
   }
 
@@ -163,7 +163,7 @@
   .hero::after {
     display: none;
   }
-  .hero .hero__content {
+  .hero-content {
     position: relative;
     width: 100%;
     max-width: 600px;
@@ -171,11 +171,11 @@
     padding: 10em 0 8em 0;
   }
 
-  .hero .hero__vid {
+  .hero-vid {
     display: none;
   }
 
-  .hero .hero__content .hero__btn {
+  .hero-btn {
     width: 30%;
     max-width: 200px;
     padding: 0.6em 2em;
@@ -186,12 +186,12 @@
 
 /* ====================== */
 @media screen and (max-width: 480px) {
-  .hero .hero__content h1 {
+  .hero-content h1 {
     font-size: 2rem;
     color: #fafafa;
   }
 
-  .hero .hero__content p {
+  .hero-content p {
     font-size: 1rem;
     margin-bottom: 1.5em;
     color: #fafafa;
