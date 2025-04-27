@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch scss:css",
+    "sass": "sass --watch scss:css --style=compressed",
     "serve": "browser-sync start --server --files 'css/*.css, *.html'",
     "start": "npm-run-all --parallel sass serve"
   },
