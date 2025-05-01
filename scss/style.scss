@@ -138,6 +138,12 @@
   color: #141414;
   background: #fafafa;
   border-radius: 4px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+.hero-btn:hover {
+  color: #FAFAFA;
+  background: #141414;
 }
 
 .cards {
@@ -196,6 +202,48 @@
   }
 }
 
+.grid {
+  background: #FAFAFA;
+
+  &-content {
+    display: grid;
+    grid-template-areas:
+    "one one two two"
+    "one one three four"
+    ;
+    gap: 1em;
+    width: 100%;
+    max-width: 1400px;
+    margin-inline: auto;
+  }
+  &-image {
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  &-image:hover img {
+    border-radius: 4px;
+    overflow: hidden;
+    transform: scale(1.1);
+  }
+
+  &-image img {
+    transform: scale(1);
+    transition: all 0.4s ease-in-out;
+  }
+
+    &-image1 {
+      grid-area: one;
+    }
+    &-image2 {
+      grid-area: two;
+    }
+    &-image3 {
+      grid-area: three;
+    }
+    &-image4 {
+      grid-area: four;
+    }
+}
 /* ===================================== */
 @media screen and (max-width: 768px) {
   .nav-btn {
